@@ -51,7 +51,7 @@ void LC_ExecuteRTS(uint16 RTSId)
 
         uint16           RTSId;               
 
-    } LC_RTSRequest_t;
+    } OS_PACK LC_RTSRequest_t;
     
     LC_RTSRequest_t RTSRequest;
     /**************************************************************/

@@ -4,11 +4,13 @@ project(CFS_LC C)
 include_directories(fsw/mission_inc)
 include_directories(fsw/platform_inc)
 
+include_directories(${APPLICATION_PLATFORM_INC_LIST})
+
 aux_source_directory(fsw/src APP_SRC_FILES)
+aux_source_directory(fsw/tables APP_TABLE_FILES)
 
 # Create the app module
 add_cfe_app(lc ${APP_SRC_FILES})
 
 include_directories(fsw/src)
-aux_source_directory(fsw/tables APP_TABLE_FILES)
 add_cfe_tables(lc ${APP_TABLE_FILES})
