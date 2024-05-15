@@ -19,21 +19,28 @@
 
 /**
  * @file
- *   Contains version tags for the Core Flight System (CFS)
- *   Limit Checker (LC) Application.
+ *   CFS Limit Checker (LC) Application Message IDs
  */
-#ifndef LC_VERSION_H
-#define LC_VERSION_H
+#ifndef LC_MSGIDS_H
+#define LC_MSGIDS_H
 
 /**
- * \defgroup cfslcversion CFS Limit Checker Version
- * \ref cfsversions
+ * \defgroup cfslccmdmid CFS Limit Checker Command Message IDs
  * \{
  */
 
-#define LC_MAJOR_VERSION 2  /**< \brief Major version number */
-#define LC_MINOR_VERSION 2  /**< \brief Minor version number */
-#define LC_REVISION      99 /**< \brief Revision number */
+#define LC_CMD_MID       0x18A4 /**< \brief Msg ID for cmds to LC                */
+#define LC_SEND_HK_MID   0x18A5 /**< \brief Msg ID to request LC housekeeping    */
+#define LC_SAMPLE_AP_MID 0x18A6 /**< \brief Msg ID to request actionpoint sample */
+
+/**\}*/
+
+/**
+ * \defgroup cfslctlmmid CFS Limit Checker Telemetry Message IDs
+ * \{
+ */
+
+#define LC_HK_TLM_MID 0x08A7 /**< \brief LC Housekeeping Telemetry */
 
 /**\}*/
 

@@ -19,22 +19,17 @@
 
 /**
  * @file
- *   Contains version tags for the Core Flight System (CFS)
- *   Limit Checker (LC) Application.
+ *   CFS Limit Checker (LC) Application Performance IDs
  */
-#ifndef LC_VERSION_H
-#define LC_VERSION_H
+#ifndef LC_PERFIDS_H
+#define LC_PERFIDS_H
 
 /**
- * \defgroup cfslcversion CFS Limit Checker Version
- * \ref cfsversions
+ * \ingroup cfslcmissioncfg
  * \{
  */
-
-#define LC_MAJOR_VERSION 2  /**< \brief Major version number */
-#define LC_MINOR_VERSION 2  /**< \brief Minor version number */
-#define LC_REVISION      99 /**< \brief Revision number */
-
+#define LC_APPMAIN_PERF_ID    28 /**< \brief Main task performance ID */
+#define LC_WDT_SEARCH_PERF_ID 43 /**< \brief Watchpoing definition table search performance ID */
 /**\}*/
 
 #endif
