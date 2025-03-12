@@ -9,6 +9,8 @@ set(APP_SRC_FILES
   fsw/src/lc_utils.c
 )
 
+include_directories(${APPLICATION_PLATFORM_INC_LIST})
+
 # Create the app module
 add_cfe_app(lc ${APP_SRC_FILES})
 

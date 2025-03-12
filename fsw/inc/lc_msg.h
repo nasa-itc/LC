@@ -157,6 +157,7 @@ typedef struct
     CFE_MSG_CommandHeader_t CmdHeader; /**< \brief Command Header */
 
     uint16 RTSId; /**< \brief RTS Id to start */
+    uint16 Padding; /**< \brief Structure padding */
 } LC_RTSRequest_t;
 
 /**\}*/
